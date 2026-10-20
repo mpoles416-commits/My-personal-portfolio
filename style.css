@@ -1,0 +1,501 @@
+.drawer-body{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: end;
+}
+.drawer-body ul li a{
+    position: relative;
+}
+.drawer-body ul li a:hover{
+    color: gold;
+    transition: 0.6s;
+}
+.drawer-body ul li a::after{
+        content: "";
+    position: absolute;
+    background-color: gold;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.3s;
+}
+.drawer-body ul li a:hover::after{
+    width: 100%;
+}
+
+button{
+    transition: 0.5s;
+    margin: 0 2px;
+}
+.btn-subtle{
+    background-color: black;
+}
+.btn-subtle:hover{
+    background-color:#1C1C1C;
+    color:rgb(223, 219, 219) ;
+}
+.back-ground{
+background-image:url(Screenshot\ 2026-10-17\ 121558.png);
+position: sticky;
+z-index: 100;
+    /* background-size: cover;
+    width:auto;
+    height: 100vh;*/
+    margin-top: 57px;
+     background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  height: 480px; 
+ padding: 70px 0 0 30px;
+
+ 
+
+}
+
+.back-ground .p h1 span{
+    color: rgb(184, 143, 39);
+}
+
+
+
+.amg{
+    /* background-image: url(img/Gemini_Generated_Image_uzsoq2uzsoq2uzso.jpg); */
+    height: auto;
+    /* background-image: url(img/Screenshot\ 2026-10-17\ 121520.png); */
+    width: 100%;
+    background-color: #020202;
+
+
+}
+.amg .about{
+    color: white;
+    padding:30px 0 15px 50px ;
+}
+.amg .about h2{
+    color: white;
+}
+.amg .about h2::after{
+      content: "";
+  display: block;
+  width: 60%;
+  height: 0.3px;
+  background: rgb(68, 68, 68);
+  margin-top: 8px;
+}
+.amg .about p{
+  color: rgb(179, 182, 180);
+  margin: 0;
+}
+.amg .about p::after{
+  content: "";
+  display: block;
+  width: 75%;
+  height: 0.3px;
+  background: rgb(68, 68, 68);
+  margin-top: 8px;
+}
+.amg .wag{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding:0 50px;
+    background-color: rgba(10, 11, 14, 0.3);
+    width: auto;
+
+     border-bottom: 0.5px solid rgb(63, 63, 63) ;
+    padding-top: 5px;
+
+}
+.amg .wag div{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    position: relative;
+    padding-top: 10px;
+  
+}
+
+.amg .wag div::after{
+
+  content: "";
+  position: absolute;
+  top: 8%;         /* يبدأ من فوق شوية */
+  right: -50px;         /* على يمين السكشن */
+  height: 65%;      /* طول الخط */
+  width: 2px;       /* سمك الخط */
+  background: rgb(68, 68, 68); /* اللون الذهبي الغامق */
+  margin-left: 50px;
+}
+
+.amg .wag #no::after{
+content: "";
+width: 0;
+}
+.amg .wag div h6{
+    color: #f1f1f1;
+   font-size: 18px;
+   text-align: center;
+}
+.amg .wag div p{
+    color: rgb(169, 170, 169);
+    font-size: 16px;
+    text-align: center;
+}
+.amg .wag div{
+
+  /* grid-column: 1/3; */
+margin-bottom: 5px;
+ 
+}
+
+.cird{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    margin: 10px 0 0 50px;
+    width: 100%;
+  border-bottom:2px solid black ;
+}
+
+.card img{
+  height: 50%;
+ 
+}
+
+.card a{
+  width: 50%;
+    margin: 20px 0 0 0;
+    background-color: #0a0a0a;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    transition: 0.5s;
+}
+.card a:hover{
+    background-color: goldenrod;
+    color: #020202;
+    border: 3px solid black;
+}
+.my h2{
+color: rgb(190, 189, 188);
+margin-left: 50px;
+margin-top: 30px;
+position: relative;
+}
+.my h2::after{
+    content: "";
+position: absolute;
+width: 30%;
+height:0.08px ;
+/* background:rgb(68, 68, 68) ; */
+bottom: -10px;
+left: 0;
+}
+.my p{
+    color: #999999;
+    margin-left:50px;
+    margin-top: 10px;
+}
+.cont{
+  padding:0 50px;
+  margin: 20px 0 0 0;
+}
+
+.cont .con{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3,auto);
+  padding-bottom: 50px;
+  gap: 15px;
+}
+
+
+.cont .con .inp{
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  gap: 10px;
+grid-row: 1/3;
+grid-column:3/4 ;
+/* background-color: rgb(6, 5, 12); */
+border-radius: 10px;
+
+color: #f1f1f1;
+}
+.cont .con input,
+.cont .con textarea{
+  padding: 5px;
+  color: goldenrod;
+  background-color: #70707055;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.cont .con button{
+  background-color: black;
+  border: 2px solid goldenrod;
+  padding: 3px;
+  border-radius: 8px;
+  transition: 0.6s;
+  font-size: 17px;
+}
+.cont .con button:hover{
+  background-color: goldenrod;
+  border: 2px solid black;
+  color: black;
+}
+.cont .get h2{
+  border-top: 2px solid rgb(68, 68, 68);
+  padding-top: 10px;
+color: white;
+}
+.cont p{
+  color:  rgb(179, 182, 180);
+}
+.cont .get p{
+ position: relative;
+
+}
+.cont .con i{
+  font-size: 20px;
+  color: white;
+}
+.cont .get p::after{
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 40%;
+  height: 0.3px;
+  background:rgb(68, 68, 68) ;
+margin-bottom: 5px;
+}
+.cont .con .e{
+  margin-top: 15px;
+  height: 100px;
+  background-color: #70707055;
+  margin:5px ;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+.e:hover{
+  transform: translateY(-10px);
+  transition: 0.6s;
+}
+
+/* 
+@media (min-width:761px) and (max-width:1024px ){
+     .cird{
+      grid-template-columns: repeat(2,auto);
+     }
+     #car{
+      margin: 20px 0;
+      width: 100%;
+     }
+     .con{
+     
+      grid-template-columns: repeat(2,1fr);
+     
+     }
+} */
+
+/* ==========================================
+   1. شاشات الموبايل والصغيرة (أقل من 768px)
+   ========================================== */
+@media (max-width: 768px) {
+
+  /* هيدر الصفحة والبنر الرئيسي */
+  .back-ground {
+    height: auto;
+    min-height: 400px;
+    padding: 90px 20px 40px 20px;
+    text-align: center;
+  }
+
+  .back-ground .p h1 {
+    font-size: 2rem;
+  }
+
+  .back-ground button {
+    margin: 8px 4px;
+    width: 80%;
+  }
+
+  /* قسم About */
+  .amg .about {
+    padding: 30px 20px 15px 20px;
+  }
+
+  .amg .about h2::after,
+  .amg .about p::after {
+    width: 100%;
+  }
+
+  /* قسم الخدمات (Web Dev, App Design, Game Dev) */
+  .amg .wag {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .amg .wag div h6,
+  .amg .wag div p{
+  text-align: start;
+}
+  .amg .wag div::after {
+    display: none; /* إخفاء الخط الفاصل الرأسي في الموبايل */
+  }
+
+  .amg .wag div {
+    border-bottom: 1px solid #3f3f3f;
+    padding-bottom: 15px;
+  }
+
+  .amg .wag #no {
+    border-bottom: none;
+  }
+
+  /* قسم المشاريع (Cards) */
+  .my h2, .my p {
+    margin-left: 20px;
+  }
+
+  .cird {
+    grid-template-columns: 1fr; /* عرض كارت واحد في كل صف */
+    margin: 10px 0 0 0;
+    padding: 0 20px;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    max-width: 100% !important;
+    width: 100%;
+  }
+
+  .car #car {
+    margin: 0;
+  }
+
+  /* قسم التواصل Contact Us */
+  .cont {
+    padding: 0 20px;
+  }
+
+  .cont .con {
+    grid-template-columns: 1fr; /* ترتيب العناصر تحت بعضها */
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+
+  .cont .con .inp {
+    grid-row: 5/6;
+    grid-column: auto;
+    margin-top: 15px;
+  }
+}
+
+/* ==========================================
+   2. الشاشات المتوسطة والتابلت (761px إلى 1024px)
+   ========================================== */
+@media (min-width: 761px) and (max-width: 1024px) {
+  
+  .amg .wag {
+    gap: 30px;
+    justify-content: space-around;
+  }
+
+  .cird {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 20px;
+    padding-right: 20px;
+  }
+
+  #car {
+    margin: 0;
+    width: 100%;
+  }
+
+  .cont .con {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cont .con .inp {
+    grid-column: span 2; /* تأخذ العرض كامل تحت كروت التواصل */
+    grid-row: 3/4;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+.about-section {
+ background-image: url(img/Gemini_Generated_Image_uzsoq2uzsoq2uzso.jpg);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-section h2 {
+  color: #b8860b; 
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  color: #b3b3b3;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+
+}
+
+.skill{
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  transition: 0.3s;
+  height: 150px;
+}
+
+.skill:hover {
+  background: #2a2a2a;
+  transform: translateY(-20px);
+  transition: 0.5s;
+}
+
+.skill i {
+  font-size: 30px;
+  color: #806d06;
+  margin-bottom: 10px;
+}
+
+.skill h3 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.skill p {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+} */
+
+
+/* }
+
+ #584b01 */
